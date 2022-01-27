@@ -13,19 +13,19 @@ int main()
     cin >> n;
 
     int arr[n][n]{0};
-    int is_diagonal = 1;
+    bool is_diagonal = true;
     for (int i = 0; i < n; i++)
         for (int j = 0; j < n; j++)
         {
             cin >> arr[i][j];
             if (i != j && arr[i][j] != 0)
-                is_diagonal = 0;
+                is_diagonal = false;
         }
 
     if (is_diagonal)
-        cout << "the array is daigonal";
+        cout << "the matrix is daigonal";
     else
-        cout << "the array is NOT daigonal";
+        cout << "the matrix is NOT daigonal";
 
     return 0;
 }
