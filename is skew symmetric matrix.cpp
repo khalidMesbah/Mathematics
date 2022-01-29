@@ -13,7 +13,7 @@ int main()
     cin >> n;
     int originalArr[n][n];
     int transposedArr[n][n]{0};
-    bool is_symmetric = true;
+    bool is_skew_symmetric = true;
 
     for (int i = 0; i < n; i++)
         for (int j = 0; j < n; j++)
@@ -28,7 +28,7 @@ int main()
             if (transposedArr[i][j] != originalArr[i][j]*-1 || originalArr[i][i] !=0)
                 is_symmetric = false;
 
-    if (is_symmetric)
+    if (is_skew_symmetric)
         cout << "the matrix is skew symmetric";
     else
         cout << "the matrix is not skew symmetric";
