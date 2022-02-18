@@ -13,3 +13,4 @@ code related to math
 - the perimeter,area,volume of the Geometric shapes
 - mersenne prime number(2^p - 1)
 - fabonacci sequence
+- multiply two matrices
